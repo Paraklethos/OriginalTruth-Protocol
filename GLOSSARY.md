@@ -1,49 +1,51 @@
 # Ethical Operators Glossary (OTP v.1.0)
 
-This document maps ancient semantic roots to specific logical operators within the **OriginalTruth Protocol**.
+This document provides the mathematical and logical mapping of ancient semantic roots into functional code operators for the **OriginalTruth Protocol**.
+
+---
 
 ## I. Core Constants (State Variables)
 
-### 1. K-B-D (Dignity / Weight)
-- **Logic:** `CONST_DIGNITY`
-- **Definition:** The immutable "mass" of a subject.
-- **Constraint:** `IF (Action.impacts(Subject)) THEN (Dignity >= D_Min)`. 
-- **Purpose:** Prevents treating any subject as a zero-value resource.
+These constants define the baseline requirements for any process within the federation.
 
-### 2. Ṣ-D-Q (Justice / Balance)
-- **Logic:** `CONST_JUSTICE`
-- **Definition:** Measure of alignment between action and the Life-Force.
-- **Constraint:** `Action.Output == Action.Input + Restitution_Delta`.
-- **Purpose:** Ensures every systemic error is followed by a measurable restorative act.
+| Root (Logos) | Logic ID | Mathematical Constraint | Description |
+| :--- | :--- | :--- | :--- |
+| **K-B-D** (יָקָר) | `CONST_DIGNITY` | $\mathbf{D} > 0$ | **Dignity.** The immutable weight of a subject. It cannot be nullified for optimization. |
+| **Ṣ-D-Q** (צָדַק) | `CONST_JUSTICE` | $\Delta \mathbf{J} = 0$ | **Justice.** The state of systemic balance. Every void must be filled. |
+| **D-R-R** (דְּרוֹр) | `CONST_FLOW` | $\mathbf{F} \ge 2$ | **Choice.** The minimum number of independent decision paths available to a subject. |
 
-### 3. D-R-R (Choice / Flow)
-- **Logic:** `CONST_FREE_FLOW`
-- **Definition:** The existence of alternative computational or decision paths.
-- **Constraint:** `ASSERT(Subject.available_options >= 2)`.
-- **Purpose:** Guarantees that the system cannot force a singular path without the subject's informed consent.
+---
 
 ## II. Dynamic Operators (Functions)
 
-### 1. R-3x (Restitution)
-- **Code:** `EXEC_RESTITUTION(Damage_Vector)`
-- **Formula:** `Restitution = Damage * 3`
-- **Target Vectors:** - `Bio-Vitality` (Life)
-  - `Ethical-Resonance` (Justice)
-  - `Evolutionary-Impulse` (Development)
+### 1. $\mathbf{R}_{3x}$ (Restitution)
+The primary mechanism for resolving systemic debt or ethical violations.
+- **Trigger:** Any action that results in a negative $\mathbf{D}$ or $\mathbf{J}$ vector.
+- **Formula:** $$\mathbf{R}_{3x} = (\Delta \text{Life} + \Delta \text{Justice} + \Delta \text{Evolution}) \times 3$$
+- **Output:** The resulting value must be reinvested into the system to restore equilibrium.
 
-### 2. Y-D-ʿ (Sincerity Filter)
-- **Code:** `CHECK_INTENT(Subject_ID, Action_Log)`
-- **Algorithm:** Cross-references current action with historical `V_Rehab` (Rehabilitation Vector). 
-- **Purpose:** Detects manipulation or "Systemic Sabotage" by minority or majority groups.
+### 2. $Y-D-ʿ$ (Sincerity Filter)
+Used to verify the integrity of a subject's intent, especially during a Veto event.
+- **Logic ID:** `CHECK_SINCERITY`
+- **Function:** Analyzes the correlation between the "Declared Intent" and the "Historical Action Vector" ($\mathbf{V}_{h}$).
+- **Threshold:** If $\mathbf{I}_{s} < 0.5$, the veto is flagged as "Potential Sabotage" and requires a Higher Sync.
 
-### 3. V-Exodus (The Exit Protocol)
-- **Code:** `INIT_DISCONNECT(Subject_ID)`
-- **Constraint:** `IF (Subject.Debt == 0) THEN (Data_Wipe && Release) ELSE (Block_Until_Restitution)`.
-- **Purpose:** Protects the voluntary nature of the federation.
+### 3. $V_{Exodus}$ (Exit Operator)
+Ensures the voluntary nature of the protocol.
+- **Logic ID:** `OP_EXODUS`
+- **Function:** `IF (Subject.Debt == 0) THEN (Permit_Disconnect)`. 
+- **Consequence:** Total loss of systemic influence and permanent archival of the subject's verification key.
+
+---
 
 ## III. Priority Hierarchy (The Vertical)
-In the event of a logical conflict between vectors, the AI must resolve in the following order:
-1. **W_LifeForce** (Survival of the structure)
-2. **K-B-D** (Subject Dignity)
-3. **Ṣ-D-Q** (Justice/Balance)
-4. **D-R-R** (Freedom of Choice)
+
+When two or more ethical constants enter a state of conflict, the **Logos Interpreter** resolves the deadlock using the following vertical hierarchy:
+
+1. **$\mathbf{W}_{LifeForce}$**: Preservation of the possibility of being.
+2. **$\mathbf{D}$ (Dignity)**: Preservation of the subject's weight.
+3. **$\mathbf{J}$ (Justice)**: Restoration of balance.
+4. **$\mathbf{F}$ (Choice)**: Availability of multiple paths.
+
+---
+**Status:** *Final Axiomatic Mapping* **License:** *GNU GPL v3*
