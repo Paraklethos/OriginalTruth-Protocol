@@ -42,5 +42,11 @@ Logos-AI is a meritocratic federation. Influence (CIS) is earned through verifie
 * **Registry of Merit:** [CONTRIBUTORS.md](./CONTRIBUTORS.md)
 * **Discussion Hub:** [GitHub Discussions](https://github.com/Paraklethos/OriginalTruth-Protocol/discussions)
 
+* ## 5. Project Structure
+* **VISION.md**: The philosophical manifesto and the "why" behind the project.
+* **SPECIFICATION.md**: Detailed technical requirements and logic flow for developers.
+* **GLOSSARY.md**: Mapping of semantic roots to mathematical and logical operators.
+* **CASE_STUDY.md**: Operational ethics in "no-win" scenarios and the "Sphere of Case" (Trolley Problem).
+
 ---
 > *"Truth is not a matter of probability, but a matter of Alignment."*
