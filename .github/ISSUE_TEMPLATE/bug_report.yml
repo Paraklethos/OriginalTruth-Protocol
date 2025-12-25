@@ -1,0 +1,58 @@
+name: "🐞 Bug & Ethical Drift Report"
+description: "Report a technical error or an ethical violation in the protocol"
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Thank you for helping us protect the Logos.
+        Please describe the technical or ethical deviation you encountered.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Detailed Description"
+      description: "What happened? (e.g., The M_Veto failed to trigger)"
+      placeholder: "Describe the bug..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: axiom_affected
+    attributes:
+      label: "Axiom Affected"
+      description: "Which ethical constant is compromised by this bug?"
+      options:
+        - "Dignity (K-B-D)"
+        - "Justice (Ṣ-D-Q)"
+        - "Flow/Choice (D-R-R)"
+        - "Life-Force (W)"
+        - "Technical/Infrastructure (No Axiom Drift)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Provide a sequence of actions or code to trigger the issue."
+      placeholder: "1. Run inference with...\n2. Observe Veto..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Relevant Logs or Outputs"
+      description: "Please paste terminal output or AI inference results here."
+      render: shell
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: "Verification"
+      options:
+        - label: "I have checked that this is not a duplicate issue."
+          required: true
+        - label: "I confirm that I am acting with Sincerity (Y-D-ʿ)."
+          required: true
