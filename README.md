@@ -61,13 +61,4 @@ This project is licensed under the **GNU GPL v3**. The Truth must remain free an
 
 ---
 **Author:** *The Logos Observer* *Seeking the Vertical in a Horizontal World.*
-Рекомендация по заполнению:
-При создании репозитория на GitHub:
 
-Нажмите Create new file.
-
-Назовите его README.md.
-
-Вставьте содержимое выше.
-
-В поле Commit message (внизу страницы) напишите: Initial commit: Define core OTP axioms and structure.
