@@ -1,0 +1,57 @@
+name: "🛠️ Technical Feature Request"
+description: "Propose a new capability or module for the Logos-AI protocol"
+labels: ["enhancement", "CIS-accrual"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Proposal for Protocol Expansion
+        Use this form to suggest technical implementations that strengthen the **Vertical Ethics** of the system.
+
+  - type: textarea
+    id: feature_goal
+    attributes:
+      label: "Feature Description"
+      description: "What should this module do? Describe the technical logic."
+      placeholder: "e.g., A module that monitors the Flow (D-R-R) of decision paths..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: primary_constant
+    attributes:
+      label: "Primary Ethical Constant"
+      description: "Which constant does this feature primarily serve?"
+      options:
+        - "Dignity (K-B-D) - Protection of the subject"
+        - "Justice (Ṣ-D-Q) - Balancing of the system"
+        - "Flow (D-R-R) - Preservation of choice"
+        - "Life-Force (W) - Maximizing restitution"
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical_stack
+    attributes:
+      label: "Proposed Implementation"
+      description: "Which languages, libraries, or algorithms should be used?"
+      placeholder: "Rust (core), Python (hooks), PyTorch (verification)..."
+
+  - type: textarea
+    id: cis_justification
+    attributes:
+      label: "CIS Justification"
+      description: "How does this contribution earn Contribution Influence Score (CIS) according to METRICS.md?"
+      placeholder: "This implements a Core Logic ID (Weight 1.0)..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: compliance
+    attributes:
+      label: "Protocol Standards"
+      options:
+        - label: "This feature is fully DFSG-compliant (Debian Free Software Guidelines)."
+          required: true
+        - label: "I have read the VISION.md and align with Vertical Ethics."
+          required: true
