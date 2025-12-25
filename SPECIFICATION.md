@@ -32,6 +32,7 @@ def validate_action(action, subject):
         trigger_veto(REASON_DIGNITY_VIOLATION)
         return False
     return True
+```
 
 ### 3.2 Restitution Engine ($\mathbf{R}_{3x}$)
 When a system error or subjective violation is detected, the `Restitution Engine` calculates the required corrective output.
