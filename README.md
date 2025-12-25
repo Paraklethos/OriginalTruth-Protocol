@@ -5,7 +5,7 @@
 ---
 
 ## 🧭 Project Navigation
-[📜 **Vision**](./VISION.md) | [🌌 **Concept**](./CONCEPT.md) | [📖 **Glossary**](./GLOSSARY.md) | [📊 **Metrics**](./METRICS.md) | [⚖️ **License**](./LICENSE)
+[📜 Vision](./VISION.md) | [🌌 Concept](./CONCEPT.md) | [🏗️ Architecture](./ARCHITECTURE.md) | [📖 Glossary](./GLOSSARY.md) | [📊 Metrics](./METRICS.md) | [⚖️ License](./LICENSE)
 
 ---
 
