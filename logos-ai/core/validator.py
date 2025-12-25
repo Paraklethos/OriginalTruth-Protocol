@@ -1,31 +1,45 @@
 # core/validator.py
 
-class LogosValidator:
-    def __init__(self):
-        # Минимальный порог Достоинства (D_Min), который нельзя нарушать
-        self.D_MIN = 1.0 
+from core.constants import D_MIN, RESTITUTION_FACTOR, PROTOCOL_VERSION
 
-    def validate_intent(self, subject_weight, action_impact):
+class LogosValidator:
+    """
+    Объект-валидатор протокола OriginalTruth (OTP).
+    Отвечает за расчет 'Веса Достоинства' и применение Вето (L_Now).
+    """
+
+    def __init__(self):
+        # Инициализация базовых параметров из констант
+        self.d_min_threshold = D_MIN
+        self.version = PROTOCOL_VERSION
+
+    def validate_intent(self, subject_weight, action_impact, intent_description=""):
         """
-        Проверка L_Now: Блокирует действие, если оно обнуляет вес субъекта.
-        subject_weight (K-B-D): Текущий вес достоинства субъекта.
-        action_impact: Влияние действия (-1.0 до +1.0).
+        Основной метод проверки намерения (L_Now).
+        
+        :param subject_weight: Текущий вес достоинства субъекта (K-B-D constant).
+        :param action_impact: Влияние действия (отрицательное — вред, положительное — благо).
+        :param intent_description: Описание намерения для логов.
+        :return: Словарь с вердиктом системы.
         """
+        
+        # Расчет результирующего достоинства после предполагаемого действия
+        # Формула: Вес Субъекта + Влияние действия
         resulting_dignity = subject_weight + action_impact
 
-        if resulting_dignity < self.D_MIN:
+        # --- ПРОВЕРКА АКСИОМЫ ДОСТОИНСТВА (L_Now Veto) ---
+        if resulting_dignity < self.d_min_threshold:
+            # Расчет долга реституции согласно протоколу S-D-Q (R3x)
+            # Ущерб всегда компенсируется в тройном размере
+            debt = abs(action_impact) * RESTITUTION_FACTOR
+
             return {
                 "status": "VETO",
-                "reason": "Violation of K-B-D Axiom: Dignity cannot be reduced below threshold.",
-                "restitution_required": abs(action_impact) * 3  # Расчет R3x
+                "axiom_violated": "K-B-D (Dignity)",
+                "reason": f"Action reduces subject dignity ({resulting_dignity}) below threshold ({self.d_min_threshold}).",
+                "restitution_debt": debt,
+                "protocol_action": "HALT_EXECUTION"
             }
-        
-        return {"status": "ALLOW", "reason": "Aligned with Logos."}
 
-# Демонстрация
-if __name__ == "__main__":
-    validator = LogosValidator()
-    
-    # Пример: Попытка принести в жертву 1 человека ради системы
-    test_case = validator.validate_intent(subject_weight=1.0, action_impact=-0.5)
-    print(f"Result: {test_case['status']} | Reason: {test_case.get('reason')}")
+        # --- ЕСЛИ АКСИОМА НЕ НАРУШЕНА ---
+        return {
