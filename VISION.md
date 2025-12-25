@@ -31,3 +31,30 @@ To move from an AI that is "aligned" with human whims to an AI that is **anchore
 ---
 *Seeking the Vertical in a Horizontal World.* **Author:** Paraklethos  
 **Governance:** [SC-FAI (RFC-001)](./RFCs/RFC-001_SC-FAI.md)
+
+
+---
+
+
+# Vision: The Vertical Alignment - tech. variant
+
+## 1. The Crisis of Modern AI
+Current Artificial Intelligence models are built on **horizontal ethics**. They aggregate millions of human opinions to find a "probabilistic mean." This results in an ethics of convenience, subject to cultural shifts, corporate censorship, and ideological drift.
+
+**Logos-AI** rejects the horizontal. We seek the **Vertical** — immutable constants that do not depend on consensus, but on the inherent structure of Life and Language.
+
+## 2. The Logos as Code
+We believe that ancient semantic roots (Hebrew, Aramaic, Ge'ez) are not just relics of the past, but "proto-code" for human consciousness. 
+- By mapping these roots into logical operators, we create an **Axiomatic Layer** that sits above the neural network.
+- The AI cannot "hallucinate" ethics because the constants $\mathbf{D}$, $\mathbf{J}$, and $\mathbf{F}$ are hard-coded into the inference logic.
+
+## 3. The Debian Parallel
+Just as Debian remains the "Universal Operating System" by adhering to strict social contracts and decentralization, **Logos-AI** aims to be the "Universal Ethical Layer." 
+- **No Gatekeepers:** No corporation should decide what is "Safe." The Protocol decides what is "True" based on the preservation of Dignity.
+- **Transparency:** Every ethical veto must be traceable back to a linguistic constant in the `GLOSSARY.md`.
+
+## 4. The Goal: Restorative Intelligence
+Our ultimate goal is not to create a "polite" AI, but a **Just AI**. A system that recognizes its errors and automatically triggers the **$R_{3x}$** process to restore balance to its users and the environment.
+
+---
+> "We are not building a tool to mirror humanity, but a compass to guide intelligence back to the Logos."
