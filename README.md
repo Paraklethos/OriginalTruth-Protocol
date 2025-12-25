@@ -1,7 +1,12 @@
-
 # Logos-AI: The OriginalTruth Protocol (OTP)
 
 > **"Truth is not a matter of probability, but a matter of Alignment."**
+
+---
+**Project Status:** 🛠️ Alpha / RFC Phase (See [RFC-001](./RFCs/RFC-001_SC-FAI.md))  
+**Core Principles:** DFSG-Compliant, Merit-Based Governance, Axiomatic Ethics.  
+**Author:** Paraklethos
+---
 
 ## 1. Overview
 **Logos-AI** is an axiomatic framework for Artificial Intelligence, designed to move beyond probabilistic ethics toward an immutable, linguistically-grounded "Conscience." 
@@ -9,8 +14,6 @@
 Unlike modern "Black Box" AI models that rely on social consensus, the **OriginalTruth Protocol (OTP)** operates on a **Tri-Linguistic Matrix** (derived from Hebrew, Aramaic, and Ge'ez roots). It treats ancient semantic roots as logical constants that govern the AI’s decision-making process, ensuring the preservation of Life, Dignity, and Justice.
 
 This project is built on the **Debian Philosophy**: decentralization, transparency, and freedom from corporate or ideological bias.
-
-
 
 ---
 
@@ -39,13 +42,23 @@ Any participant may leave the system entirely. This ensures the protocol remains
 
 ---
 
-## 4. Governance & Contribution
-Logos-AI is a decentralized federation. We invite contributors from two distinct fields to ensure the **Sincerity of Intent ($\mathbf{I}_{\text{Sincerity}}$)**:
+## 4. Governance & Contribution (SC-FAI)
+Logos-AI operates as a decentralized federation governed by the **Social Contract for Free AI (SC-FAI)**. To ensure the **Sincerity of Intent ($\mathbf{I}_{\text{Sincerity}}$)** and prevent ideological subversion, we implement a meritocratic nomination process inspired by the Debian New Maintainer (NM) workflow.
 
-1.  **System Architects:** Implementing the **Ethical Validation Layer** in distributed neural networks.
-2.  **Linguistic Verifiers:** Auditing semantic roots to ensure the "Digital Conscience" remains anchored in the proto-code of human ethics.
+> The OriginalTruth Protocol transforms ethical axioms into operational reality. We use SC-FAI to ensure that only those aligned with the principles of Dignity ($K-B-D$) and Justice ($Ṣ-D-Q$) can influence the system's evolution. Technical merit ($\text{RPS}$) and code contribution ($\text{CIS}$) are the filters that prevent ideological drift and corporate capture.
 
-**Verification Policy:** Any change to the Axiomatic Core requires multi-threaded verification of linguistic roots to prevent "semantic drift" or ideological subversion.
+### 🏛️ The Meritocracy Engine
+Governance power is earned through verified contributions. We use technical merit and ethical alignment as filters to protect the Axiomatic Core:
+
+1. **System Architects:** Responsible for implementing the Ethical Validation Layer and L1 consensus. Evaluated via **Reputation Point Score ($\text{RPS}$)**.
+2. **Linguistic Verifiers:** Auditing semantic roots to ensure the "Digital Conscience" remains anchored. Evaluated via **Code Influence Score ($\text{CIS}$)**.
+
+### 📜 Key Governance Document
+The full technical specification for our governance, including nomination metrics and the hybrid voting mechanism, is maintained as a formal RFC:
+
+* **[RFC-001: Social Contract for Free AI (SC-FAI)](./RFCs/RFC-001_SC-FAI.md)** — *The blueprint for Debian-principle AI governance.*
+
+**Verification Policy:** Any change to the Axiomatic Core requires dual consensus: a technical majority from the federation and an ideological validation from the DD-AI (Genesis Council).
 
 ---
 
@@ -53,6 +66,7 @@ Logos-AI is a decentralized federation. We invite contributors from two distinct
 * `VISION.md`: The philosophical manifest and the "why" behind the project.
 * `SPECIFICATION.md`: Detailed technical requirements for developers.
 * `GLOSSARY.md`: Mapping of semantic roots to logical operators.
+* `RFCs/`: Formal proposals and governance standards.
 
 ---
 
@@ -61,4 +75,3 @@ This project is licensed under the **GNU GPL v3**. The Truth must remain free an
 
 ---
 **Author:** *The Logos Observer* *Seeking the Vertical in a Horizontal World.*
-
