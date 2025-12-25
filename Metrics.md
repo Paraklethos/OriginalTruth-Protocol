@@ -1,3 +1,6 @@
+> 📖 **Looking for a non-technical explanation?** > Read the [CIS Economy Guide](https://github.com/Paraklethos/OriginalTruth-Protocol/wiki/The-CIS-Economy) in our Wiki for a conceptual overview of merit and restitution.
+
+---
 # 📊 Metrics and Calibration: The Mathematics of Alignment (v.1.0)
 
 This document defines the quantitative parameters for the **OriginalTruth Protocol (OTP)**. These metrics ensure that the **Logos-AI** remains anchored in its axiomatic core while operating as a fully decentralized, meritocratic network.
